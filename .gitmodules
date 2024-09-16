@@ -1,0 +1,12 @@
+[submodule "CFCRPL-mlModelRetrain"]
+	path = CFCRPL-mlModelRetrain
+	url = https://github.com/spuerta10/CFCRPL-mlModelRetrain.git
+[submodule "CFCRPL-creditRiskLib"]
+	path = CFCRPL-creditRiskLib
+	url = https://github.com/spuerta10/CFCRPL-creditRiskLib.git
+[submodule "CFCRPL-onlinePredictService"]
+	path = CFCRPL-onlinePredictService
+	url = https://github.com/spuerta10/CFCRPL-onlinePredictService.git
+[submodule "CFCRPL-creditRiskDAG"]
+	path = CFCRPL-creditRiskDAG
+	url = https://github.com/spuerta10/CFCRPL-creditRiskDAG.git
