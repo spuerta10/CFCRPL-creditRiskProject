@@ -1,5 +1,5 @@
 # Lineamientos del proyecto final
-![[Lineamientos Proyecto Final MLOps.pdf]]
+[Lineamientos Proyecto Final MLOps.pdf](https://github.com/spuerta10/CFCRPL-creditRiskProject/blob/main/docs/Lineamientos%20Proyecto%20Final%20MLOps.pdf)
 # Definición del problema y objetivos
 ### Actividades
 - [x] Claridad en la descripción del problema a resolver. ✅ 2024-10-12
@@ -19,7 +19,7 @@ El problema radica en que PrestaDificil S.A.S no posee un proceso en donde se pu
 La arquitectura propuesta para abordar el problema anteriormente descrito es la mostrada en la siguiente figura. 
 **FIGURA 1**
 Diagrama de despliegue de creditRisk.
-![[CFCRPL creditRisk project architecture.png]]
+![CFCRPL creditRisk project architecture.png](https://raw.githubusercontent.com/spuerta10/CFCRPL-creditRiskProject/refs/heads/main/docs/img/CFCRPL%20creditRisk%20project%20architecture.png)
 Esta arquitectura pretende abarcar y dar solución a los siguientes apartados:
 - Gestión de experimentos y modelos.
 - Orquestación y pipelines de ML.
@@ -63,7 +63,7 @@ Nombre y descripción de los parámetros almacenados en MLFlow.
 | processeddataset_columns    | Lista de nombres de las columnas presentes en el dataset después de realizar ingeniería de características.                          |
 **FIGURA 2**
 Parámetros almacenados en MLFlow.
-![[Parametros almacenados en MLFlow proyecto final Bootcamp MLOps.png]]
+![Parametros almacenados en MLFlow proyecto final Bootcamp MLOps.png](https://raw.githubusercontent.com/spuerta10/CFCRPL-creditRiskProject/refs/heads/main/docs/img/Parametros%20almacenados%20en%20MLFlow%20proyecto%20final%20Bootcamp%20MLOps.png)
 ### Métricas
 Principalmente, se almacenará la precisión (accuracy) mostrada por el modelo. Además, se guardará un reporte de clasificación que contiene métricas clave para evaluar el rendimiento del modelo en términos de clasificación. Este reporte incluye los siguientes valores:
 - **Precision**: Representa la proporción de predicciones positivas correctas respecto al total de predicciones positivas realizadas. Es decir, cuántos de los casos predichos como positivos realmente lo eran.
@@ -73,10 +73,10 @@ Principalmente, se almacenará la precisión (accuracy) mostrada por el modelo. 
 
 **FIGURA 3**
 Precisión mostrada por el modelo almacenada en MLFlow.
-![[Precision mostrada por el modelo almacenada en MLFlow proyecto final Bootcamp MLOps.png]]
+![Precision mostrada por el modelo almacenada en MLFlow proyecto final Bootcamp MLOps.png](https://raw.githubusercontent.com/spuerta10/CFCRPL-creditRiskProject/refs/heads/main/docs/img/Precision%20mostrada%20por%20el%20modelo%20almacenada%20en%20MLFlow%20proyecto%20final%20Bootcamp%20MLOps.png)
 **FIGURA 4**
 Reporte de clasificación almacenado en MLFlow.
-![[Reporte de clasificación almacenado en MLFlow proyecto final Bootcamp MLOps.png]]
+![Reporte de clasificación almacenado en MLFlow proyecto final Bootcamp MLOps.png](https://raw.githubusercontent.com/spuerta10/CFCRPL-creditRiskProject/refs/heads/main/docs/img/Reporte%20de%20clasificaci%C3%B3n%20almacenado%20en%20MLFlow%20proyecto%20final%20Bootcamp%20MLOps.png)
 ### Artefactos
 En MLFlow se almacenan varios artefactos clave. El **xgb_model** es el modelo entrenado con XGBoost, listo para hacer predicciones sobre el riesgo crediticio. El **classification_report.txt** contiene el reporte de clasificación con métricas como precisión, recall y F1-score para evaluar el rendimiento del modelo. El **credit_risk_dataset.csv** es el conjunto de datos crudos utilizado para el entrenamiento del modelo, mientras que el **processed_credit_risk_dataset.csv** contiene los datos preprocesados y transformados listos para el análisis.
 # Orquestación y pipelines de ML
@@ -112,7 +112,7 @@ Finalmente y en caso tal de que se halle la existencia de deriva en los datos (*
 En la interfaz de composer (composer UI), el proceso y etapas anteriormente descritas se ven de la siguiente forma.
 **FIGURA 5**
 retrainMLModelPipeline steps.
-![[retrainMLModelPipeline.png]]
+![retrainMLModelPipeline.png](https://raw.githubusercontent.com/spuerta10/CFCRPL-creditRiskProject/refs/heads/main/docs/img/retrainMLModelPipeline.png)
 # Integración continua incluyendo pruebas
 ## Actividades
 - [x] Implementación de un pipeline de CI/CD robusto para proyectos de ML. ✅ 2024-10-12
